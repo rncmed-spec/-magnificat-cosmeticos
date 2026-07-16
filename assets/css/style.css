@@ -6,16 +6,23 @@ body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:#f5f2ec;color:#33
     padding: 0 30px;
 }
 .hero {
-    background: #ffffff;
+    min-height: 100vh;
+    background: radial-gradient(circle at center,
+        #fffdf8 0%,
+        #f8f2e5 35%,
+        #efe3c2 70%,
+        #e4d0a0 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 80px 20px 60px;
+    padding: 40px 20px;
 }
 .logo {
-    width: 650px;
-    max-width: 95%;
+    width: min(900px, 95%);
     height: auto;
     display: block;
-    margin: 0 auto 25px auto;
+    margin: 0 auto 30px;
 }
 .subtitle{color:#7b6a45;font-size:1.2rem}
 .buttons{margin-top:25px}

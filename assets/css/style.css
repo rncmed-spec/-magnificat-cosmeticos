@@ -7,28 +7,100 @@ body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:#f5f2ec;color:#33
 }
 .hero {
     min-height: 100vh;
-    background: radial-gradient(circle at center,
-        #fffdf8 0%,
-        #f8f2e5 35%,
-        #efe3c2 70%,
-        #e4d0a0 100%);
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     text-align: center;
+
+    background:
+        radial-gradient(circle at center,
+        #fffefb 0%,
+        #faf6ec 35%,
+        #f2ead8 65%,
+        #ece1c8 100%);
+
     padding: 40px 20px;
 }
-.logo {
-    width: min(900px, 95%);
-    height: auto;
-    display: block;
-    margin: 0 auto 30px;
+.logo{
+
+    width:min(900px,95vw);
+
+    height:auto;
+
+    display:block;
+
+    margin:0 auto 40px;
+
+    filter: drop-shadow(0 10px 18px rgba(170,130,40,.18));
+
 }
-.subtitle{color:#7b6a45;font-size:1.2rem}
-.buttons{margin-top:25px}
-.btn{display:inline-block;padding:14px 24px;border-radius:40px;text-decoration:none;color:#fff;margin:8px;font-weight:bold}
-.whatsapp{background:#25D366}
-.natura{background:#8a6a2f}
+.subtitle{
+
+    font-size:1.8rem;
+
+    font-style:italic;
+
+    color:#6f5630;
+
+    margin-top:15px;
+
+    margin-bottom:45px;
+
+    line-height:1.8;
+
+}
+.buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+.btn{
+
+    padding:18px 40px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    font-size:1.2rem;
+
+    font-weight:600;
+
+    transition:.3s;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.10);
+
+}
+.whatsapp{
+
+    background:#25D366;
+
+    color:white;
+
+}
+.natura{
+
+    background:linear-gradient(135deg,#d4af37,#b7892f);
+
+    color:white;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.18);
+
+}
 .card{background:#fff;margin:30px 0;padding:25px;border-radius:18px;box-shadow:0 6px 20px rgba(0,0,0,.08)}
 .banner,.produto{width:100%;border-radius:12px}
 blockquote{font-style:italic;color:#555}

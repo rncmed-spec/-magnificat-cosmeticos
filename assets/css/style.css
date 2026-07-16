@@ -5,30 +5,62 @@ body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:#f5f2ec;color:#33
     margin: auto;
     padding: 0 30px;
 }
-.hero {
-    min-height: 85vh;
+.hero{
+    position:relative;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    min-height:100vh;
 
-    text-align: center;
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    overflow:hidden;
+
+    text-align:center;
 
     background:
-        radial-gradient(circle at center,
-        #fffefb 0%,
-        #faf6ec 35%,
-        #f2ead8 65%,
-        #ece1c8 100%);
+    radial-gradient(circle at center,
+    #fffefb 0%,
+    #f8f1df 40%,
+    #efe2bf 70%,
+    #ffffff 100%);
+}
 
-    padding: 40px 20px;
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:900px;
+
+    height:900px;
+
+    border-radius:50%;
+
+    background:radial-gradient(
+    circle,
+    rgba(214,173,57,.20),
+    rgba(214,173,57,.08),
+    transparent 70%);
+
+    filter:blur(40px);
+
 }
 .logo{
-    width:min(1100px,98vw);
-    max-width:none;
+
+    position:relative;
+
+    z-index:2;
+
+    width:min(1000px,96vw);
+
     height:auto;
-    display:block;
-    margin:0 auto 20px;
+
+    margin-bottom:35px;
+
 }
 .subtitle{
     font-size:1.8rem;
